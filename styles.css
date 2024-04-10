@@ -1263,3 +1263,8 @@ h6 {
     border-radius: 5px !important;
     padding-top: 3px;
 }
+.Select-value {
+    width: 260px !important;
+    border-radius: 5px !important;
+    padding-top: 3px;
+}
