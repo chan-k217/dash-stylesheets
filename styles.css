@@ -1251,3 +1251,15 @@ h6 {
     display: block;
   }
 }
+
+
+
+
+/********************
+-custom styles
+*******************/
+.Select .Select-control .Select-value {
+    width: 260px;
+    border-radius: 5px !important;
+    padding-top: 3px;
+}
