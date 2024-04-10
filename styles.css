@@ -1275,26 +1275,3 @@ h6 {
   width: 100% !important;
 }
 
-/* Styles for the dropdown menu itself */
-.Select-menu {
-    /* Add your styles here */
-  min-width: 400px !important;
-}
-
-/* Styles for the virtualized grid inside the dropdown */
-.ReactVirtualized__Grid,
-.ReactVirtualized__List,
-.VirtualSelectGrid {
-    /* Add your styles here */
-    width: auto !important; /* Example to override width */
-}
-
-
-.VirtualizedSelectOption {
-    min-width: 400px !important;
-}
-
-
-.VirtualizedSelectFocusedOption {
-    min-width: 400px !important;
-}
