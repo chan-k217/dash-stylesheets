@@ -1268,3 +1268,37 @@ h6 {
     border-radius: 5px !important;
     padding-top: 3px;
 }
+/* Styles for the outer wrapper of the dropdown menu */
+.Select-menu-outer {
+    /* Add your styles here */
+  min-width: 400px !important;
+}
+
+/* Styles for the dropdown menu itself */
+.Select-menu {
+    /* Add your styles here */
+  min-width: 400px !important;
+}
+
+/* Styles for the virtualized grid inside the dropdown */
+.ReactVirtualized__Grid,
+.ReactVirtualized__List,
+.VirtualSelectGrid {
+    /* Add your styles here */
+    width: auto !important; /* Example to override width */
+}
+
+/* Styles for the virtualized select options */
+.VirtualizedSelectOption {
+    /* Add your styles here */
+    height: 35px; /* Example height */
+    line-height: 35px; /* To vertically center the text */
+    padding-left: 10px; /* Add some padding inside the option */
+    box-sizing: border-box; /* To include padding in the height */
+}
+
+/* Styles for the focused or highlighted option */
+.VirtualizedSelectFocusedOption {
+    /* Add your styles here */
+    background-color: #e9e9e9; /* Example to change background color */
+}
