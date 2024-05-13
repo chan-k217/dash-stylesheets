@@ -1310,7 +1310,7 @@ h6 {
 }
 
 .save-button:hover,
-.refresh-button:hover{
+.refresh-button:hover {
   background-color: var(--primaryColor);
 }
 
@@ -1347,12 +1347,6 @@ h6 {
 .show-hide-menu-item {
   color: #33b5f575;
 }
-
-/* .dash-spreadsheet-menu-item:hover,
-.show-hide:hover{
-background-color: var(--primaryColor);
-}
- */
 
 /* .show-hide-menu-item:hover {
   color: var(--primaryColor);
