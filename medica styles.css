@@ -1313,6 +1313,9 @@ h6 {
 .refresh-button:hover {
   background-color: var(--primaryColor);
 }
+.submit-button:hover {
+  background-color: #824ef0;
+}
 
 .dash-spreadsheet-menu {
   float: right;
