@@ -26,7 +26,7 @@
 }
 
 :root {
-  --primaryColor: #824ef0;
+  --primaryColor: #05a88c; /*#824ef0;*/
   --secondaryColor: #ffff;
   --txtColor: #10181b;
   --txtColor2: #f0f0f0;
@@ -774,6 +774,7 @@ a {
 .iki-button {
   min-width: 64px;
   padding: 9px 16px;
+  margin: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -814,6 +815,7 @@ a {
 .export {
   padding: 6px 11px;
   background-color: var(--primaryColor);
+  /* background-color: #824ef0; */
   color: #fff;
   text-transform: capitalize;
 }
@@ -915,15 +917,16 @@ button {
 /* SELECT */
 
 .Select {
-  width: 160px;
+  width: 100%; /* 160px */
   border-radius: 5px !important;
 }
 .Select .Select-control {
-  width: 160px;
+  width: 100% !important; /* 160px */
   border: 1px solid var(--borderColor) !important;
   border-radius: 5px !important;
   box-shadow: 0 0 0 transparent !important;
-  background-color: #ffff !important;
+  overflow: visible;
+  /* background-color: #ffff !important; */
 }
 .Select .Select-control:hover {
   border: 1px solid var(--borderColorHover) !important;
@@ -1179,18 +1182,20 @@ h4,
 h5,
 h6,
 .iki-title {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 h1 {
   font-weight: 600;
   border-bottom: 1px solid #e3e9ef;
   padding-bottom: 4px;
 }
-h2 {
-  font-weight: 500;
-}
+h2,
+h3,
 h4,
-h5,
+h5 {
+  font-weight: bold;
+}
+
 h6 {
   font-weight: 400;
 }
@@ -1239,4 +1244,112 @@ h6 {
     width: 100%;
     display: block;
   }
+}
+
+.save-button {
+  min-width: 64px;
+  min-height: 32px;
+  padding: 0px 16px;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "Axiforma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.submit-button {
+  min-width: 64px;
+  min-height: 32px;
+  padding: 0px 16px;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "Axiforma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.refresh-button {
+  min-width: 32px;
+  max-height: 32px;
+  padding: 9px 16px;
+  margin: 5px 0 0 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "Axiforma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.save-button:hover,
+.refresh-button:hover,
+.dash-spreadsheet-menu-item:hover,
+.show-hide:hover {
+  background-color: var(--primaryColor);
+}
+
+.dash-spreadsheet-menu {
+  float: right;
+  width: auto;
+}
+.dash-spreadsheet-menu-item,
+.show-hide {
+  width: max-content;
+  /* max-height: 42px; */
+  /* padding: px 8px; */
+  margin: 2px 5px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "Axiforma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #33b5f5;
+  color: white;
+}
+
+/* .dash-spreadsheet-menu {
+  position: absolute;
+} */
+
+.show-hide-menu-item {
+  color: #33b5f575;
+}
+
+.show-hide-menu-item:hover {
+  color: var(--primaryColor);
 }
